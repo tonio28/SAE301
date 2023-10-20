@@ -1,0 +1,19 @@
+@use "../base/_styles" as*;
+.nav {
+display: flex;
+justify-content: center;
+
+&__bar{
+    display: flex;
+    width: 82.875rem;
+    padding: 1.25rem 3.125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    border-radius: 0.9375rem;
+    background:var(--nav-bg-secondary);
+}
+
+
+
+}
