@@ -1,18 +1,71 @@
-@use "../base/styles" as*;
+@use "../base/styles" as *;
 
-.button {
+.button,
+.btn-panier {
   display: inline-flex;
   padding: 0.625rem 1.25rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   border-radius: 6.25rem;
-  background: var(--btn-secondary-btn-bg, #fff);
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-fg);
   @include font-texte-14px;
+
+  &:hover {
+    background: var(--hover-btn-bg);
+    color: var(--hover-btn-fg);
+  }
+
+  // Styles pour :active
+  &:active {
+    transform: scale(0.95);
+  }
+
+  @media (min-width: 768px) {
+    @include font-texte-16px;
+  }
 }
 
-@media (min-width: 768px) {
-  .desktop-button {
-    @include font-texte-16px;
+.btn-panier .btn-panier__text {
+  display: none;
+  opacity: 0;
+}
+
+.btn-panier:hover .btn-panier__text {
+  display: block;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.btn-panier__icon {
+  fill: white;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  .toggle-input {
+    display: none;
+
+    &:checked + .circle {
+      background-color: var(--primary-yellow-light);
+    }
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent; /* Utilisez "transparent" pour indiquer que le fond est vide */
+    border: 2px solid var(--primary-yellow);
+    cursor: pointer;
+  }
+
+  .toggle-label {
+    @include font-texte-14px;
   }
 }

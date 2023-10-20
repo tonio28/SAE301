@@ -145,30 +145,41 @@ textarea {
   --card-color-fg: var(--primary-brown);
   --icon-primary: var(--neutral-white);
   --icon-secondary: var(--primary-brown);
-  --label-primary-bg: var(--primary-red-light);
-  --label-primary-fg: var(--neutral-white);
+  --label-primary-bg: var(--neutral-white);
+  --label-primary-fg: var(--primary-red);
   --label-primary-stroke: var(--primary-red);
   --nav-bg-primary: var(--neutral-white);
   --nav-bg-secondary: var(--primary-yellow-light);
 }
 
-.button {
+.button,
+.btn-panier {
   display: inline-flex;
   padding: 0.625rem 1.25rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   border-radius: 6.25rem;
-  background: var(--btn-secondary-btn-bg, #fff);
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-fg);
   font-family: "Lexend Deca";
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   letter-spacing: normal;
 }
-
+.button:hover,
+.btn-panier:hover {
+  background: var(--hover-btn-bg);
+  color: var(--hover-btn-fg);
+}
+.button:active,
+.btn-panier:active {
+  transform: scale(0.95);
+}
 @media (min-width: 768px) {
-  .desktop-button {
+  .button,
+  .btn-panier {
     font-family: "Lexend Deca";
     font-weight: 500;
     font-size: 16px;
@@ -176,12 +187,121 @@ textarea {
     letter-spacing: normal;
   }
 }
+
+.btn-panier .btn-panier__text {
+  display: none;
+  opacity: 0;
+}
+
+.btn-panier:hover .btn-panier__text {
+  display: block;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.btn-panier__icon {
+  fill: white;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.toggle .toggle-input {
+  display: none;
+}
+.toggle .toggle-input:checked + .circle {
+  background-color: var(--primary-yellow-light);
+}
+.toggle .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent; /* Utilisez "transparent" pour indiquer que le fond est vide */
+  border: 2px solid var(--primary-yellow);
+  cursor: pointer;
+}
+.toggle .toggle-label {
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+.label {
+  display: inline-flex;
+  padding: 0.3125rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.9375rem;
+  border: 3px solid var(--label-primary-stroke);
+  color: var(--label-primary-fg);
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  .label {
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: normal;
+    padding: 0.9375rem 1.25rem;
+  }
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.toggle .toggle-input {
+  display: none;
+}
+.toggle .toggle-input:checked + .circle {
+  background-color: var(--primary-yellow-light);
+}
+.toggle .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--primary-yellow);
+  cursor: pointer;
+}
+.toggle .toggle-label {
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+.counter {
+  display: inline-flex;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
+  border: 3px solid var(--label-primary-stroke);
+  background: var(--label-primary-bg);
+}
+
 .nav {
   display: flex;
   justify-content: center;
 }
 .nav__bar {
   display: flex;
+  flex-wrap: wrap;
   width: 82.875rem;
   padding: 1.25rem 3.125rem;
   justify-content: center;
@@ -189,6 +309,11 @@ textarea {
   gap: 1.25rem;
   border-radius: 0.9375rem;
   background: var(--nav-bg-secondary);
+}
+@media (min-width: 768px) {
+  .nav__bar {
+    flex-wrap: nowrap;
+  }
 }
 
 .header {

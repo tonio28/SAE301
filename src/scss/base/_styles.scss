@@ -32,8 +32,8 @@
   --icon-primary: var(--neutral-white);
   --icon-secondary: var(--primary-brown);
 
-  --label-primary-bg: var(--primary-red-light);
-  --label-primary-fg: var(--neutral-white);
+  --label-primary-bg: var(--neutral-white);
+  --label-primary-fg: var(--primary-red);
   --label-primary-stroke: var(--primary-red);
 
   --nav-bg-primary: var(--neutral-white);
@@ -77,7 +77,6 @@
   font-family: "Lexend Deca";
   font-weight: 500;
   font-size: 22px;
-
   text-decoration: none;
   letter-spacing: normal;
 }
@@ -87,7 +86,6 @@
   font-family: "Lexend Deca";
   font-weight: 500;
   font-size: 16px;
-
   text-decoration: none;
   letter-spacing: normal;
 }
