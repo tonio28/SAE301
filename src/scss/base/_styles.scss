@@ -1,0 +1,113 @@
+/* Fichier colors.scss */
+
+/* default */
+/* colors */
+$neutral-black: #000000;
+$neutral-black-light: #555555;
+$neutral-white: #ffffff;
+$primary-brown: #573c2f;
+$primary-brown-light: #8f7d74;
+$primary-red: #ea6752;
+$primary-red-light: #f19a8c;
+$primary-yellow: #fecf44;
+$primary-yellow-light: #fedf82;
+
+/* light */
+/* colors */
+$hover-btn-bg: $primary-red-light;
+$hover-btn-fg: $neutral-white;
+
+$primary-btn-bg: $primary-red;
+$primary-btn-fg: $neutral-white;
+
+$secondary-btn-bg: $neutral-white;
+$secondary-btn-fg: $primary-brown;
+
+$bag-btn-bg: $primary-red;
+$bag-btn-fg: $neutral-white;
+
+$bag-hover-btn-bg: $neutral-white;
+$bag-hover-btn-fg: $primary-red;
+
+$card-color-bg: $neutral-white;
+$card-color-fg: $primary-brown;
+
+$icon-primary: $neutral-white;
+$icon-secondary: $primary-brown;
+
+$label-primary-bg: $primary-red-light;
+$label-primary-fg: $neutral-white;
+$label-primary-stroke: $primary-red;
+
+$nav-bg-primary: $neutral-white;
+$nav-bg-secondary: $primary-yellow-light;
+
+@mixin font-title-bold {
+  // title/bold //
+  font-family: "Lexend Deca";
+  font-weight: 700;
+  font-size: 50px;
+
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-title-medium {
+  // title/medium //
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 50px;
+
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-title-titrage {
+  // title/titrage //
+  font-family: "Damion";
+  font-weight: 400;
+  font-size: 50px;
+
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-title-bold {
+  // title/bold //
+  font-family: "Lexend Deca";
+  font-weight: 700;
+  font-size: 22px;
+
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-title-medium {
+  // title/medium //
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 22px;
+
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-btn-medium {
+  // btn/medium //
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 16px;
+
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+@mixin font-texte-medium {
+  // texte/medium //
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 14px;
+
+  text-decoration: none;
+  letter-spacing: normal;
+}
