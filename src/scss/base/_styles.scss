@@ -70,15 +70,7 @@
   letter-spacing: normal;
 }
 
-@mixin font-title-bold {
-  // title/bold //
-  font-family: "Lexend Deca";
-  font-weight: 700;
-  font-size: 22px;
 
-  text-decoration: none;
-  letter-spacing: normal;
-}
 
 @mixin font-title-medium {
   // title/medium //
