@@ -152,39 +152,6 @@ textarea {
   --nav-bg-secondary: var(--primary-yellow-light);
 }
 
-:root {
-  /* default */
-  /* colors */
-  --neutral-black: #000000;
-  --neutral-black-light: #555555;
-  --neutral-white: #ffffff;
-  --primary-brown: #573c2f;
-  --primary-brown-light: #8f7d74;
-  --primary-red: #ea6752;
-  --primary-red-light: #f19a8c;
-  --primary-yellow: #fecf44;
-  --primary-yellow-light: #fedf82;
-  --hover-btn-bg: var(--primary-red-light);
-  --hover-btn-fg: var(--neutral-white);
-  --primary-btn-bg: var(--primary-red);
-  --primary-btn-fg: var(--neutral-white);
-  --secondary-btn-bg: var(--neutral-white);
-  --secondary-btn-fg: var(--primary-brown);
-  --bag-btn-bg: var(--primary-red);
-  --bag-btn-fg: var(--neutral-white);
-  --bag-hover-btn-bg: var(--neutral-white);
-  --bag-hover-btn-fg: var(--primary-red);
-  --card-color-bg: var(--neutral-white);
-  --card-color-fg: var(--primary-brown);
-  --icon-primary: var(--neutral-white);
-  --icon-secondary: var(--primary-brown);
-  --label-primary-bg: var(--primary-red-light);
-  --label-primary-fg: var(--neutral-white);
-  --label-primary-stroke: var(--primary-red);
-  --nav-bg-primary: var(--neutral-white);
-  --nav-bg-secondary: var(--primary-yellow-light);
-}
-
 .button {
   display: inline-flex;
   padding: 0.625rem 1.25rem;
@@ -208,6 +175,34 @@ textarea {
     text-decoration: none;
     letter-spacing: normal;
   }
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav__bar {
+  display: flex;
+  width: 82.875rem;
+  padding: 1.25rem 3.125rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 0.9375rem;
+  background: var(--nav-bg-secondary);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__content {
+  display: flex;
+  width: 86.125rem;
+  height: 5.3125rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: var(--nav-bg-primary);
 }
 
 /*# sourceMappingURL=style.css.map */
