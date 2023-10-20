@@ -1,0 +1,16 @@
+@use "../base/_styles" as*;
+
+.header {
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        display: flex;
+        width: 86.125rem;
+        height: 5.3125rem;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        background-color: var(--nav-bg-primary);
+    }
+}
