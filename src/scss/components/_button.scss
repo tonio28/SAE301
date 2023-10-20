@@ -1,4 +1,4 @@
-@import "../base/_styles";
+@use "../base/styles" as*;
 
 .button {
   display: inline-flex;
