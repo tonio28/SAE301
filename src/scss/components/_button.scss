@@ -1,1 +1,18 @@
 @import "../base/_styles";
+
+.button {
+  display: inline-flex;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  background: var(--btn-secondary-btn-bg, #fff);
+  @include font-texte-14px;
+}
+
+@media (min-width: 768px) {
+  .desktop-button {
+    @include font-texte-16px;
+  }
+}
