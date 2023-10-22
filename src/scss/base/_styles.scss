@@ -36,6 +36,10 @@
   --label-primary-fg: var(--primary-red);
   --label-primary-stroke: var(--primary-red);
 
+  --conteur-primary-bg: var(--primary-red-light);
+  --conteur-primary-fg: var(--neutral-white);
+  --conteur-primary-stroke: var(--primary-red);
+
   --nav-bg-primary: var(--neutral-white);
   --nav-bg-secondary: var(--primary-yellow-light);
 }
@@ -70,8 +74,6 @@
   letter-spacing: normal;
 }
 
-
-
 @mixin font-title-medium {
   // title/medium //
   font-family: "Lexend Deca";
@@ -98,4 +100,9 @@
 
   text-decoration: none;
   letter-spacing: normal;
+}
+
+@mixin btncolor($background, $color) {
+  background: $background;
+  color: $color;
 }

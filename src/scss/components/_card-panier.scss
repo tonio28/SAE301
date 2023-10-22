@@ -1,0 +1,87 @@
+@use "../base/_styles" as *;
+
+.card {
+  display: inline-flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  gap: 0.625rem;
+  border-radius: 0.5775rem;
+  background-color: var(--card-color-bg);
+
+  @media (min-width: 768px) {
+    padding: none;
+    border-radius: 0.9375rem;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  &__name {
+    color: var(--card-color-fg);
+    @include font-texte-14px;
+
+    @media (min-width: 768px) {
+      @include font-texte-16px;
+    }
+  }
+  &__delete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem;
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+      gap: 1.875rem;
+    }
+  }
+
+  .info__interaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .info__img {
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 0.5625rem;
+    flex-shrink: 0;
+
+    @media (min-width: 768px) {
+      width: 23.4375rem;
+      height: 23.4375rem;
+    }
+  }
+}
+
+.desktop {
+  display: none; // Masquez le bouton "Voir produit" par défaut
+
+  @media (min-width: 768px) {
+    display: flex; // Masquez le bouton "Ajouter au panier" en mode desktop
+  }
+}
+
+.mobile {
+  display: flex; // Affichez le bouton "Ajouter au panier" par défaut en mode mobile
+
+  @media (min-width: 768px) {
+    display: none; // Masquez le bouton "Ajouter au panier" en mode desktop
+  }
+}
+.info_illsutration {
+  position: relative;
+}
+.btn-panier {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

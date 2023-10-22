@@ -89,8 +89,8 @@ optgroup,
 select,
 textarea {
   padding: 0;
-  line-height: inherit;
   color: inherit;
+  line-height: inherit;
 }
 
 /* Standardize form elements */
@@ -148,6 +148,9 @@ textarea {
   --label-primary-bg: var(--neutral-white);
   --label-primary-fg: var(--primary-red);
   --label-primary-stroke: var(--primary-red);
+  --conteur-primary-bg: var(--primary-red-light);
+  --conteur-primary-fg: var(--neutral-white);
+  --conteur-primary-stroke: var(--primary-red);
   --nav-bg-primary: var(--neutral-white);
   --nav-bg-secondary: var(--primary-yellow-light);
 }
@@ -155,17 +158,17 @@ textarea {
 .button,
 .btn-panier {
   display: inline-flex;
-  padding: 0.625rem 1.25rem;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
-  border-radius: 6.25rem;
+  padding: 0.625rem 1.25rem;
   background: var(--primary-btn-bg);
+  border-radius: 6.25rem;
   color: var(--primary-btn-fg);
   font-family: "Lexend Deca";
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
+  gap: 0.625rem;
   letter-spacing: normal;
 }
 .button:hover,
@@ -181,8 +184,8 @@ textarea {
   .button,
   .btn-panier {
     font-family: "Lexend Deca";
-    font-weight: 500;
     font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
     letter-spacing: normal;
   }
@@ -206,8 +209,8 @@ textarea {
 .toggle {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   cursor: pointer;
+  gap: 0.5rem;
 }
 .toggle .toggle-input {
   display: none;
@@ -218,49 +221,49 @@ textarea {
 .toggle .circle {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   background-color: transparent; /* Utilisez "transparent" pour indiquer que le fond est vide */
   border: 2px solid var(--primary-yellow);
+  border-radius: 50%;
   cursor: pointer;
 }
 .toggle .toggle-label {
   font-family: "Lexend Deca";
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   letter-spacing: normal;
 }
 
 .label {
   display: inline-flex;
-  padding: 0.3125rem;
   justify-content: center;
   align-items: center;
-  border-radius: 0.9375rem;
+  padding: 0.3125rem;
   border: 3px solid var(--label-primary-stroke);
+  border-radius: 0.9375rem;
   color: var(--label-primary-fg);
   font-family: "Lexend Deca";
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   letter-spacing: normal;
 }
 @media (min-width: 768px) {
   .label {
+    padding: 0.9375rem 1.25rem;
     font-family: "Lexend Deca";
-    font-weight: 500;
     font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
     letter-spacing: normal;
-    padding: 0.9375rem 1.25rem;
   }
 }
 
 .toggle {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   cursor: pointer;
+  gap: 0.5rem;
 }
 .toggle .toggle-input {
   display: none;
@@ -271,28 +274,35 @@ textarea {
 .toggle .circle {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   background-color: transparent;
   border: 2px solid var(--primary-yellow);
+  border-radius: 50%;
   cursor: pointer;
 }
 .toggle .toggle-label {
   font-family: "Lexend Deca";
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   letter-spacing: normal;
 }
 
 .counter {
   display: inline-flex;
-  padding: 0.625rem 1.25rem;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
+  padding: 0.625rem 1.25rem;
+  background: var(--conteur-primary-bg);
+  border: 3px solid var(--conteur-primary-stroke);
   border-radius: 0.9375rem;
-  border: 3px solid var(--label-primary-stroke);
-  background: var(--label-primary-bg);
+  color: var(--conteur-primary-fg);
+  gap: 0.625rem;
+}
+
+.btn-panier__icon {
+  display: flex;
+  align-items: center;
+  fill: var(--conteur-primary-fg);
 }
 
 .nav {
@@ -301,14 +311,14 @@ textarea {
 }
 .nav__bar {
   display: flex;
-  flex-wrap: wrap;
-  width: 82.875rem;
-  padding: 1.25rem 3.125rem;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
-  border-radius: 0.9375rem;
+  width: 82.875rem;
+  padding: 1.25rem 3.125rem;
   background: var(--nav-bg-secondary);
+  border-radius: 0.9375rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 }
 @media (min-width: 768px) {
   .nav__bar {
@@ -316,28 +326,34 @@ textarea {
   }
 }
 
-.header__section {
+.header {
   display: flex;
-  margin-left: 1.25rem;
-  margin-top: 1.25;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--nav-bg-primary);
-}
-.header__div1 {
-  display: flex;
-  padding: 1.25rem;
-  align-items: center;
-  gap: 2.5rem;
-}
-.header__div2 {
-  display: flex;
-  width: 20.15625rem;
   justify-content: center;
+}
+.header__content {
+  display: flex;
+  justify-content: center;
+  width: 86.125rem;
+  height: 5.3125rem;
+}
+.card__info {
+  display: flex;
   align-items: center;
-  gap: 3.75rem;
+  flex-direction: row;
+  gap: 0.625rem;
+}
+@media (min-width: 768px) {
+  .card__info {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+}
+.card .info__interaction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--nav-bg-primary);
   flex-shrink: 0;
-  align-self: stretch;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=Users/chauveauantoine/Documents/GitHub/SAE301/dist/css/style.css.map */
