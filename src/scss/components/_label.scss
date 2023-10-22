@@ -2,10 +2,10 @@
 
 .label {
   display: inline-flex;
-  padding: 0.3125rem;
+  padding: 0.3rem;
   justify-content: center;
   align-items: center;
-  border-radius: 0.9375rem;
+  border-radius: 1rem;
   border: 3px solid var(--label-primary-stroke);
   color: var(--label-primary-fg);
   @include font-texte-14px;

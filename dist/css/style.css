@@ -89,8 +89,8 @@ optgroup,
 select,
 textarea {
   padding: 0;
-  color: inherit;
   line-height: inherit;
+  color: inherit;
 }
 
 /* Standardize form elements */
@@ -158,17 +158,17 @@ textarea {
 .button,
 .btn-panier {
   display: inline-flex;
+  padding: 0.625rem 1.25rem;
   justify-content: center;
   align-items: center;
-  padding: 0.625rem 1.25rem;
-  background: var(--primary-btn-bg);
+  gap: 0.625rem;
   border-radius: 6.25rem;
+  background: var(--primary-btn-bg);
   color: var(--primary-btn-fg);
   font-family: "Lexend Deca";
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
-  gap: 0.625rem;
   letter-spacing: normal;
 }
 .button:hover,
@@ -184,8 +184,8 @@ textarea {
   .button,
   .btn-panier {
     font-family: "Lexend Deca";
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
     text-decoration: none;
     letter-spacing: normal;
   }
@@ -209,8 +209,8 @@ textarea {
 .toggle {
   display: flex;
   align-items: center;
-  cursor: pointer;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .toggle .toggle-input {
   display: none;
@@ -221,49 +221,49 @@ textarea {
 .toggle .circle {
   width: 20px;
   height: 20px;
+  border-radius: 50%;
   background-color: transparent; /* Utilisez "transparent" pour indiquer que le fond est vide */
   border: 2px solid var(--primary-yellow);
-  border-radius: 50%;
   cursor: pointer;
 }
 .toggle .toggle-label {
   font-family: "Lexend Deca";
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
   letter-spacing: normal;
 }
 
 .label {
   display: inline-flex;
+  padding: 0.3rem;
   justify-content: center;
   align-items: center;
-  padding: 0.3125rem;
+  border-radius: 1rem;
   border: 3px solid var(--label-primary-stroke);
-  border-radius: 0.9375rem;
   color: var(--label-primary-fg);
   font-family: "Lexend Deca";
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
   letter-spacing: normal;
 }
 @media (min-width: 768px) {
   .label {
-    padding: 0.9375rem 1.25rem;
     font-family: "Lexend Deca";
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
     text-decoration: none;
     letter-spacing: normal;
+    padding: 0.9375rem 1.25rem;
   }
 }
 
 .toggle {
   display: flex;
   align-items: center;
-  cursor: pointer;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .toggle .toggle-input {
   display: none;
@@ -274,29 +274,29 @@ textarea {
 .toggle .circle {
   width: 20px;
   height: 20px;
+  border-radius: 50%;
   background-color: transparent;
   border: 2px solid var(--primary-yellow);
-  border-radius: 50%;
   cursor: pointer;
 }
 .toggle .toggle-label {
   font-family: "Lexend Deca";
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
   letter-spacing: normal;
 }
 
 .counter {
   display: inline-flex;
+  padding: 0.625rem 1.25rem;
   justify-content: center;
   align-items: center;
-  padding: 0.625rem 1.25rem;
-  background: var(--conteur-primary-bg);
-  border: 3px solid var(--conteur-primary-stroke);
-  border-radius: 0.9375rem;
-  color: var(--conteur-primary-fg);
   gap: 0.625rem;
+  border-radius: 0.9375rem;
+  border: 3px solid var(--conteur-primary-stroke);
+  background: var(--conteur-primary-bg);
+  color: var(--conteur-primary-fg);
 }
 
 .btn-panier__icon {
@@ -311,14 +311,14 @@ textarea {
 }
 .nav__bar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   width: 82.875rem;
   padding: 1.25rem 3.125rem;
-  background: var(--nav-bg-secondary);
-  border-radius: 0.9375rem;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1.25rem;
+  border-radius: 0.9375rem;
+  background: var(--nav-bg-secondary);
 }
 @media (min-width: 768px) {
   .nav__bar {
@@ -326,20 +326,67 @@ textarea {
   }
 }
 
-.header {
+.header__section {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  margin: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav-bg-primary);
 }
-.header__content {
+.header__div1 {
+  display: flex;
+  padding: 1.25rem;
+  align-items: center;
+  gap: 2.5rem;
+}
+.header__logo {
+  max-width: 15rem;
+}
+.header__div2 {
   display: flex;
   justify-content: center;
-  width: 86.125rem;
-  height: 5.3125rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  display: inline-flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  gap: 0.625rem;
+  border-radius: 0.5775rem;
+  background-color: var(--card-color-bg);
+}
+@media (min-width: 768px) {
+  .card {
+    padding: none;
+    border-radius: 0.9375rem;
+    align-items: center;
+    gap: 1.875rem;
+  }
+}
+.card__name {
+  color: var(--card-color-fg);
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  .card__name {
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: normal;
+  }
 }
 .card__info {
   display: flex;
-  align-items: center;
   flex-direction: row;
+  align-items: center;
   gap: 0.625rem;
 }
 @media (min-width: 768px) {
@@ -350,10 +397,272 @@ textarea {
 }
 .card .info__interaction {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  background-color: var(--nav-bg-primary);
+  align-items: center;
+  gap: 0.625rem;
+}
+.card .img-card {
+  width: 6.875rem;
+  height: 6.875rem;
+  border-radius: 0.5625rem;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .card .img-card {
+    width: 23.4375rem;
+    height: 23.4375rem;
+  }
+}
+
+.desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .desktop {
+    display: flex;
+  }
+}
+
+.mobile {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.info_illsutration {
+  position: relative;
+}
+
+.btn-panier {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body {
+  background: red;
+}
+
+.card-panier {
+  display: flex;
+  width: min-content;
+  padding: 0.625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.5775rem;
+  background-color: var(--card-color-bg);
+}
+@media (min-width: 768px) {
+  .card-panier {
+    display: flex;
+    width: max-content;
+    padding-right: 2rem;
+  }
+}
+.card-panier__name {
+  color: var(--card-color-fg);
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  .card-panier__name {
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: normal;
+  }
+}
+.card-panier .info-panier {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .card-panier .info-panier {
+    display: flex;
+  }
+}
+.card-panier .info-panier__div1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .card-panier .info-panier__div1 {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+.card-panier .info-panier__div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .card-panier .info-panier__div2 {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+.card-panier .info-panier__interaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .card-panier .info-panier__interaction {
+    padding-left: 1rem;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+}
+.card-panier .info-panier__img {
+  width: 6.875rem;
+  height: 6.875rem;
+  border-radius: 0.5625rem;
   flex-shrink: 0;
 }
 
-/*# sourceMappingURL=Users/chauveauantoine/Documents/GitHub/SAE301/dist/css/style.css.map */
+.desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .desktop {
+    display: flex;
+  }
+}
+
+.mobile {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.info_illustration {
+  position: relative;
+}
+
+.btn-panier {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.toggle {
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .toggle {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+body {
+  background: red;
+}
+
+.card-fiche {
+  display: flex;
+  width: 20rem;
+  padding: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5775rem;
+  gap: 1rem;
+  background-color: var(--card-color-bg);
+}
+@media (min-width: 768px) {
+  .card-fiche {
+    width: 50rem;
+    flex-direction: row;
+    padding-right: 2rem;
+  }
+}
+
+.info-fiche {
+  display: flex;
+  width: 20rem;
+  padding: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5775rem;
+  gap: 1rem;
+  background-color: var(--card-color-bg);
+}
+@media (min-width: 768px) {
+  .info-fiche {
+    width: 50rem;
+    display: flex;
+    align-items: flex-start;
+    padding-right: 2rem;
+  }
+}
+.info-fiche__description {
+  color: var(--card-color-fg);
+  text-align: justify;
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  .info-fiche__description {
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: normal;
+  }
+}
+.info-fiche__name {
+  text-align: center;
+  color: var(--card-color-fg);
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+.info-fiche__img {
+  width: 6.875rem;
+  height: 6.875rem;
+  border-radius: 0.5625rem;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .info-fiche__img {
+    width: 23.4375rem;
+    height: 23.4375rem;
+  }
+}
+.info-fiche__info {
+  display: flex;
+  flex-direction: column;
+}
+.info-fiche .toggle {
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .info-fiche .toggle {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

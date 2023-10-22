@@ -1,34 +1,30 @@
-@use "../base/_styles" as*;
+@use "../base/_styles" as *;
 
 .header {
+  &__section {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem;
 
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg-primary);
+  }
 
-    &__section {
-        display: flex;
-        margin-left: 1.25rem;
-        margin-top: 1.25;
-        justify-content: space-between;
-        align-items: center;
-        background: var(--nav-bg-primary);
+  &__div1 {
+    display: flex;
+    padding: 1.25rem;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  &__logo {
+    max-width: 15rem;
+  }
 
-    }
-
-    &__div1 {
-        display: flex;
-        padding: 1.25rem;
-        align-items: center;
-        gap: 2.5rem;
-    }
-
-    &__div2 {
-        display: flex;
-        width: 20.15625rem;
-        justify-content: center;
-        align-items: center;
-        gap: 3.75rem;
-        flex-shrink: 0;
-        align-self: stretch;
-
-    }
-
+  &__div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 }

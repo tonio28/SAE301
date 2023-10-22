@@ -9,41 +9,56 @@
 </head>
 
 <body class="body">
-    <section class="card">
-        <h2 class="card__name mobile">
+
+    <section class="card-panier">
+        <h2 class="card-panier__name mobile">
             Sandwich extra complet thon
         </h2>
-        <div class="card__info">
-            <div class="info_illsutration">
-                <img class="info__img" src="assets/Cookies 3 choco.svg" alt="photo cookies">
+        <div class="info-panier">
+            <div class="info-panier_illsutration">
+                <img class="info-panier__img" src="assets/Cookies 3 choco.svg" alt="photo cookies">
             </div>
-            <h2 class="card__name desktop">
-                Sandwich extra complet thon
-            </h2>
-            <div class="info__interaction">
-                <div class="card__delete">
-                    <a><img src="./assets/trash-2.svg" alt=""></a>
-                    <span class="label">
-                        4,30€
-                    </span>
 
-                </div>
-                <div class="counter">
-                    <button class="btn" id="decrement">
-                        <div class="btn-panier__icon">
-                            <img src="./assets/moins.svg" alt="icon">
-                        </div>
-                    </button>
-                    <div id="count">0</div>
-                    <button class="btn" id="increment">
-                        <div class="btn-panier__icon">
-                            <img src="./assets/plus.svg" alt="icon">
-                        </div>
-                    </button>
-                </div>
+            <div class="info-panier__interaction">
 
+                <div class="info-panier__div2">
+                    <h2 class="card-panier__name desktop">
+                        Sandwich extra complet thon
+                    </h2>
+                    <div class="counter">
+                        <button class="btn" id="decrement">
+                            <div class="btn-panier__icon">
+                                <img src="./assets/moins.svg" alt="icon">
+                            </div>
+                        </button>
+                        <div id="count">0</div>
+                        <button class="btn" id="increment">
+                            <div class="btn-panier__icon">
+                                <img src="./assets/plus.svg" alt="icon">
+                            </div>
+                        </button>
+
+                    </div>
+                    <div class="toggle">
+                        <input type="radio" id="toggle1" name="toggles" class="toggle-input" checked>
+                        <label for="toggle1" class="circle"></label>
+                        <span class="toggle-label">Option 1</span>
+
+                        <input type="radio" id="toggle2" name="toggles" class="toggle-input">
+                        <label for="toggle2" class="circle"></label>
+                        <span class="toggle-label">Option 2</span>
+                    </div>
+
+                    <div class="info-panier__div1">
+                        <span class="label">
+                            4,30€
+                        </span>
+                        <button><img src="./assets/trash-2.svg" alt=""></button>
+
+
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
 
 </body>
