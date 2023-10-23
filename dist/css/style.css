@@ -726,4 +726,39 @@ body {
   }
 }
 
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+@media (max-width: 765px) {
+  .profil {
+    flex-direction: column;
+  }
+}
+.profil__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 100px;
+}
+.profil__divtxt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (max-width: 765px) {
+  .profil__divtxt {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.profil__txt {
+  color: var(--neutral-white);
+}
+
 /*# sourceMappingURL=style.css.map */
