@@ -4,11 +4,18 @@
   &__section {
     display: flex;
     flex-direction: row;
-    margin: 1.25rem;
-
     justify-content: space-between;
     align-items: center;
     background: var(--nav-bg-primary);
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  &__logo {
+    max-width: 15rem;
+
+    @media (max-width: 765px) {
+      width: 9.28125rem;
+    }
   }
 
   &__div1 {
@@ -16,15 +23,38 @@
     padding: 1.25rem;
     align-items: center;
     gap: 2.5rem;
-  }
-  &__logo {
-    max-width: 15rem;
+
+    @media (max-width: 765px) {
+      display: none;
+    }
   }
 
   &__div2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3.75rem;
+
+    @media (max-width: 765px) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__pro {
+    @media (max-width: 765px) {
+      width: 1.5rem;
+    }
+  }
+
+  &__loc {
+    @media (max-width: 765px) {
+      display: none;
+    }
+  }
+
+  &__bag {
+    @media (max-width:765px) {
+      width: 1.5rem;
+    }
   }
 }
