@@ -1,0 +1,27 @@
+@use "../base/_styles" as *;
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bar {
+    display: flex;
+    width: 82.875rem;
+    padding: 1.25rem 3.125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    border-radius: 0.9375rem;
+    background: var(--nav-bg-secondary);
+
+    @media (max-width: 765px) {
+      display: flex;
+      flex-direction: column;
+      width: 16.3125rem;
+      height: 9.625rem;
+      gap: 0.5rem;
+      border-radius: 0.9375rem;
+    }
+  }
+}
