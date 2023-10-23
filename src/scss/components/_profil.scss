@@ -1,0 +1,41 @@
+@use "../base/_styles" as *;
+
+.profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    @media (max-width: 765px) {
+        flex-direction: column;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 9.375rem;
+        height: 9.375rem;
+        border-radius: 100px;
+    }
+
+    &__divtxt {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        @media (max-width: 765px) {
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    }
+
+    &__txt {
+        color: var(--neutral-white);
+    }
+
+
+}
