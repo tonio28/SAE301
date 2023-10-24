@@ -23,6 +23,11 @@
 }
 
 
+.form__date_naiss{
+    display: flex;
+    align-items: center;
+}
+
 
 .box__large {
     width: 34.9375rem;
@@ -50,4 +55,34 @@
 
 }
 
+
+.large {
+    width: 34.9375rem;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+
+
+    @media (max-width:765px) {
+        width: 19.3125rem;
+        height: 1.375rem;
+    }
+
+}
+
+
+.date {
+    width: auto;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+    font-family: Lexend Deca;
+
+
+    @media (max-width:765px) {
+    width: 6rem;
+    height: 1.375rem;
+    font-size: 0.75rem;
+
+    }
+
+}
 ;
