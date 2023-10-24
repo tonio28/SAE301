@@ -1,0 +1,32 @@
+.barre {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 43.625rem;
+    height: 4.8125rem;
+    display: flex;
+    border-radius: 6.25rem;
+    border: 2px solid var(--primary-brown);
+
+    @media (max-width:765px) {
+        width: 18.3125rem;
+        height: 1.88931rem;
+        font-size: 0.75rem;
+    
+        }
+
+    &__logo {
+        @media (max-width:765px) {
+            width: 1.51925rem;
+            height: 1.51925rem;
+        
+            }
+
+
+    }
+    
+
+    }
+
