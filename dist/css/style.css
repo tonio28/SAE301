@@ -764,7 +764,11 @@ body {
   }
 }
 .profil__txt {
+<<<<<<< HEAD
   color: var(--neutral-black);
+=======
+  color: var(--neutral-white);
+>>>>>>> f6715527d050144c3557265d010a499775c81060
   font-family: Lexend Deca;
 }
 
@@ -775,12 +779,25 @@ body {
 .form__txt {
   color: var(--primary-brown);
   font-family: Lexend Deca;
+  font-size: 1.375rem;
+}
+@media (max-width: 765px) {
+  .form__txt {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
 }
 
-.large {
+.box__large {
   width: 34.9375rem;
   height: 2.75rem;
   border-radius: 6.25rem;
+}
+@media (max-width: 765px) {
+  .box__large {
+    width: 19.3125rem;
+    height: 1.375rem;
+  }
 }
 
 .medium {
