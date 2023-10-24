@@ -1,0 +1,20 @@
+@use "../base/_styles" as *;
+
+.titrage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title1 {
+        @include font-title-titrage;
+    }
+
+    &__title2 {
+        @include font-title-bold;
+    }
+
+    &__txt {
+        @include font-title-medium;
+    }
+}
