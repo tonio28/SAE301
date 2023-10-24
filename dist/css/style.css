@@ -760,6 +760,7 @@ body {
 }
 .profil__txt {
   color: var(--neutral-white);
+  font-family: Lexend Deca;
 }
 
 .form__box {
