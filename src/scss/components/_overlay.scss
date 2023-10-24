@@ -1,0 +1,104 @@
+@use "../base/_styles" as *;
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-white);
+    width: 58.375rem;
+    height: 37.8125rem;
+    border-radius: 15px;
+    padding: 2rem;
+    height: 37.813rem;
+
+    @media (max-width: 765px) {
+        width: 22.375rem;
+        padding: 2rem 0.5rem 0rem 0.5rem;
+        height: 31.938rem;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        @media (max-width: 765px) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        @include font-texte-22px;
+        font-weight: 700;
+        color: var(--icon-secondary);
+
+        @media (max-width: 765px) {
+            padding-top: 2rem;
+        }
+
+    }
+
+    &__allcontent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__price {
+        border: 3px solid var(--primary-btn-bg);
+        text-align: center;
+        border-radius: 15px;
+        @include font-texte-16px;
+        font-weight: 700;
+        color: var(--primary-btn-bg);
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 2rem 0rem 2rem 0rem;
+
+        @media (max-width: 765px) {
+            margin-bottom: 0rem;
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font-texte-16px;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    &__nbproduct {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include font-texte-16px;
+        padding-bottom: 2rem;
+    }
+
+    &__moreproduct {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include font-texte-16px;
+        border: 3px solid var(--primary-btn-bg);
+        text-align: center;
+        border-radius: 15px;
+        font-weight: 700;
+        color: var(--primary-btn-bg);
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    &__btnaddbag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-btn-bg);
+        width: 10rem;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+}
