@@ -733,10 +733,15 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 2rem;
+  background-color: var(--neutral-white);
+  width: 35rem;
+  border-radius: 15px;
 }
 @media (max-width: 765px) {
   .profil {
     flex-direction: column;
+    width: 23.4375rem;
+    height: 20.375rem;
   }
 }
 .profil__img {
@@ -759,7 +764,8 @@ body {
   }
 }
 .profil__txt {
-  color: var(--neutral-white);
+  color: var(--neutral-black);
+  font-family: Lexend Deca;
 }
 
 .form__box {
