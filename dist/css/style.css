@@ -841,6 +841,18 @@ body {
   }
 }
 
+.exp {
+  width: 7.625rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+}
+@media (max-width: 765px) {
+  .exp {
+    width: 3.3125rem;
+    height: 1.375rem;
+  }
+}
+
 .barre {
   display: flex;
   justify-content: space-between;
@@ -1198,6 +1210,122 @@ body {
   width: 10rem;
   padding: 1rem;
   border-radius: 15px;
+}
+
+.paie__box {
+  border: 2px solid var(--primary-red);
+  background: var(--primary-red-light);
+}
+.paie__txt {
+  color: var(--primary-brown);
+  font-family: Lexend Deca;
+  font-size: 1.375rem;
+}
+@media (max-width: 765px) {
+  .paie__txt {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
+
+.paie__date_naiss {
+  display: flex;
+  align-items: center;
+}
+
+.box__large {
+  width: 34.9375rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+}
+@media (max-width: 765px) {
+  .box__large {
+    width: 19.3125rem;
+    height: 1.375rem;
+  }
+}
+
+.medium {
+  width: 10.25rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+}
+@media (max-width: 765px) {
+  .medium {
+    width: 8.8125rem;
+    height: 1.375rem;
+  }
+}
+
+.large {
+  width: 34.9375rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+}
+@media (max-width: 765px) {
+  .large {
+    width: 19.3125rem;
+    height: 1.375rem;
+  }
+}
+
+.date {
+  width: auto;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+  font-family: Lexend Deca;
+}
+@media (max-width: 765px) {
+  .date {
+    width: 6rem;
+    height: 1.375rem;
+    font-size: 0.75rem;
+  }
+}
+
+input[type=text]::placeholder {
+  opacity: 60%;
+  color: var(--neutral-white);
+}
+
+.bs {
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: -0.3125rem;
+}
+.bs__txt {
+  color: var(--primary-brown);
+  text-align: center;
+  font-family: Lexend Deca;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 765px) {
+  .bs__txt {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
+.bs__icon {
+  width: 2.4375rem;
+  height: 2.37888rem;
+  z-index: -1;
+  position: absolute;
+  top: 8px;
+  left: 50px;
+}
+@media (max-width: 765px) {
+  .bs__icon {
+    width: 1.62325rem;
+    height: 1.58419rem;
+    top: 5px;
+    left: 32px;
+  }
 }
 
 .titrage {
