@@ -1,0 +1,93 @@
+@use "../base/_styles" as *;
+
+
+.paie {
+    &__box {
+        border: 2px solid var(--primary-red);
+        background: var(--primary-red-light);
+
+    }
+
+    &__txt {
+        color: var(--primary-brown);
+        font-family: Lexend Deca;
+        font-size: 1.375rem;
+
+        @media (max-width:765px) {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+    }
+
+}
+
+
+.paie__date_naiss{
+    display: flex;
+    align-items: center;
+}
+
+
+.box__large {
+    width: 34.9375rem;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+
+    @media (max-width:765px) {
+        width: 19.3125rem;
+        height: 1.375rem;
+    }
+
+}
+
+
+.medium {
+    width: 10.25rem;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+
+
+    @media (max-width:765px) {
+        width: 8.8125rem;
+        height: 1.375rem;
+    }
+
+}
+
+
+.large {
+    width: 34.9375rem;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+
+
+    @media (max-width:765px) {
+        width: 19.3125rem;
+        height: 1.375rem;
+    }
+
+}
+
+
+.date {
+    width: auto;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+    font-family: Lexend Deca;
+
+
+    @media (max-width:765px) {
+    width: 6rem;
+    height: 1.375rem;
+    font-size: 0.75rem;
+
+    }
+
+}
+
+input[type="text"]::placeholder {
+    opacity: 60%;
+    color: var(--neutral-white); 
+}
+;
