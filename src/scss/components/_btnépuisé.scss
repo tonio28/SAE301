@@ -1,0 +1,12 @@
+@use "../base/styles" as *;
+
+.btnépuisé {
+    @include font-texte-16px;
+    background-color: var(--primary-yellow);
+    color: var(--secondary-btn-fg);
+    text-align: center;
+    padding: 1rem;
+    width: 9.9375rem;
+    height: 4.875rem;
+    border-radius: 15px;
+}
