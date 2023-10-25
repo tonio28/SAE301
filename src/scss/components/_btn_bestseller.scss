@@ -1,0 +1,46 @@
+.bs {
+
+    z-index: 1;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: -0.3125rem;
+
+    &__txt {
+        color: var(--primary-brown );
+        text-align: center;
+        font-family: Lexend Deca;
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media (max-width:765px) {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    }
+
+    &__icon {
+        width: 2.4375rem;
+        height: 2.37888rem;
+        z-index: -1;
+        position: absolute;
+        top: 8px;
+        left: 50px;
+
+
+        
+        @media (max-width:765px) {
+        width: 1.62325rem;
+        height: 1.58419rem;
+        top: 5px;
+        left: 32px;
+        }
+    
+    }
+
+
+}
