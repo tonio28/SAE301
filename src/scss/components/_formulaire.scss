@@ -85,4 +85,18 @@
     }
 
 }
+
+.exp {
+    width: 7.625rem;
+    height: 2.75rem;
+  
+    border-radius: 6.25rem;
+
+
+    @media (max-width:765px) {
+    width: 3.3125rem;
+    height: 1.375rem;
+
+    }
+}
 ;
