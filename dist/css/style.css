@@ -1243,4 +1243,68 @@ body {
   border-radius: 15px;
 }
 
+.espacepanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--neutral-white);
+  padding: 3.125rem;
+  gap: 6rem;
+}
+.espacepanier__title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.espacepanier__title1 {
+  font-family: "Damion";
+  font-weight: 400;
+  font-size: 50px;
+  text-decoration: none;
+  letter-spacing: normal;
+  color: var(--secondary-btn-fg);
+}
+.espacepanier__title2 {
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 50px;
+  text-decoration: none;
+  letter-spacing: normal;
+  color: var(--secondary-btn-fg);
+}
+.espacepanier__txt {
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+  letter-spacing: normal;
+  color: var(--neutral-black-light);
+}
+.espacepanier__price {
+  display: flex;
+  gap: 5rem;
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+  letter-spacing: normal;
+  color: var(--secondary-btn-fg);
+}
+.espacepanier__btnbuy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-btn-bg);
+  color: var(--neutral-white);
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: normal;
+  gap: 0.5rem;
+  border-radius: 100px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
 /*# sourceMappingURL=style.css.map */
