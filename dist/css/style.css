@@ -1228,4 +1228,19 @@ body {
   letter-spacing: normal;
 }
 
+.btnépuisé {
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: normal;
+  background-color: var(--primary-yellow);
+  color: var(--secondary-btn-fg);
+  text-align: center;
+  padding: 1rem;
+  width: 9.9375rem;
+  height: 4.875rem;
+  border-radius: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
