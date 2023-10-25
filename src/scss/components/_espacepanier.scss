@@ -1,0 +1,51 @@
+@use "../base/styles" as *;
+
+.espacepanier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--neutral-white);
+    padding: 3.125rem;
+    gap: 6rem;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title1 {
+        @include font-title-titrage;
+        color: var(--secondary-btn-fg);
+    }
+
+    &__title2 {
+        @include font-title-medium;
+        color: var(--secondary-btn-fg);
+    }
+
+    &__txt {
+        @include font-texte-22px;
+        color: var(--neutral-black-light);
+    }
+
+    &__price {
+        display: flex;
+        gap: 5rem;
+        @include font-texte-22px;
+        color: var(--secondary-btn-fg);
+    }
+
+    &__btnbuy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-btn-bg);
+        color: var(--neutral-white);
+        @include font-texte-16px;
+        gap: 0.5rem;
+        border-radius: 100px;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+    }
+}
