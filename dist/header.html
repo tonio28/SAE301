@@ -10,22 +10,33 @@
 
 <body>
     <header class="header">
-    
 
-        <div class="header__section">
-            <div class="mobile">menu burger</div>
+
+        <nav class="header__section">
+            <input type="checkbox" id="menuburger" class="hidden-checkbox">
+            <label for="menuburger" class="header__label">
+                <img class="unchecked" src="/dist/assets/icon=menuburger.svg" alt="menu burger en mobile">
+                <img class="checked" src="/dist/assets/icon=x.svg" alt="X pour fermet le menu burger">
+            </label>
+
+
             <img class="header__logo" src="./assets/logo.svg" alt="logo de la mie caline"></img>
-            <div class="header__div1">
+            <div class="header__div1 ">
+                <img class="header__loc mobile" src="./assets/icon=locate.svg" alt="icon localisation"></img>
                 <button class="button">NOS PRODUITS</button>
                 <button class="button">A PROPOS DE NOUS</button>
+
             </div>
             <div class="header__div2">
                 <img class="header__pro" src="./assets/icon=profile.svg" alt="icon profile"></img>
-                <img class="header__loc" src="./assets/icon=locate.svg" alt="icon localisation"></img>
+                <img class="header__loc desktop" src="./assets/icon=locate.svg" alt="icon localisation"></img>
                 <img class="header__bag" src="./assets/icon=bag.svg " alt="icon panier"></img>
             </div>
+        </nav>
     </header>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>
