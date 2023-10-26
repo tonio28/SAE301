@@ -368,6 +368,10 @@ textarea {
   background: var(--nav-bg-primary);
   padding: 0rem 2rem 0rem 2rem;
 }
+.header__label {
+  cursor: pointer;
+  z-index: 100;
+}
 .header__logo {
   max-width: 15rem;
 }
@@ -384,7 +388,16 @@ textarea {
 }
 @media (max-width: 765px) {
   .header__div1 {
-    display: none;
+    width: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    inset: 0 0 0 50%;
+    translate: -200% 0;
+    transition: all 0.3s ease-in-out;
   }
 }
 .header__div2 {
@@ -404,14 +417,48 @@ textarea {
   }
 }
 @media (max-width: 765px) {
-  .header__loc {
-    display: none;
-  }
-}
-@media (max-width: 765px) {
   .header__bag {
     width: 1.5rem;
   }
+}
+
+.menuburgerClose, .iconX {
+  display: none;
+}
+@media (max-width: 765px) {
+  .menuburgerClose, .iconX {
+    display: none;
+  }
+}
+
+input[type=checkbox]:checked ~ .header__div1 {
+  translate: -100%;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.unchecked {
+  fill: currentColor;
+}
+@media (min-width: 765px) {
+  .unchecked {
+    display: none;
+  }
+}
+
+.checked {
+  fill: currentColor;
+  display: none;
+}
+
+.hidden-checkbox:checked + .header__label .unchecked {
+  display: none;
+}
+
+.hidden-checkbox:checked + .header__label .checked {
+  display: flex;
 }
 
 .card {
