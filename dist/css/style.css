@@ -367,10 +367,11 @@ textarea {
   align-items: center;
   background: var(--nav-bg-primary);
   padding: 0rem 2rem 0rem 2rem;
+  z-index: 1;
 }
 .header__label {
   cursor: pointer;
-  z-index: 100;
+  z-index: 50;
 }
 .header__logo {
   max-width: 15rem;
@@ -437,6 +438,7 @@ input[type=checkbox]:checked ~ .header__div1 {
 
 .hidden-checkbox {
   display: none;
+  z-index: 100;
 }
 
 .unchecked {
